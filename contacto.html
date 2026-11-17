@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Hotel Chilitos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Chilitos</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="informacion.html">Información</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Ponte en contacto con nosotros</h2>
+        <p>¿Tienes alguna duda o deseas hacer una reservación? Llena el siguiente formulario o contáctanos por nuestros medios directos.</p>
+        
+        <ul style="list-style: none; padding: 0;">
+            <li><strong>Teléfono:</strong> 434 123 4567</li>
+            <li><strong>Correo:</strong> contacto@hotelchilitos.com</li>
+            <li><strong>Ubicación:</strong> Pátzcuaro, Michoacán</li>
+        </ul>
+
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <br>
+            <div>
+                <label for="asunto">Motivo de contacto:</label><br>
+                <select id="asunto" name="asunto">
+                    <option value="reservacion">Reservación</option>
+                    <option value="duda">Duda general</option>
+                    <option value="queja">Comentarios / Quejas</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Hotel Chilitos - 2026</p>
+    </footer>
+</body>
+</html>

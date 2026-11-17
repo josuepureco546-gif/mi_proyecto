@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Negocio - Productos</title>
+    
+</head>
+<body>
+
+    
+    <header>
+        <h1>Mi Negocio</h1>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="promocion" aria-labelledby="titulo-cotizador">
+            <h2 id="titulo-cotizador">Cotiza tu compra</h2>
+            
+            <label for="producto">Producto</label>
+            <select id="producto">
+                <option value="">Selecciona un producto</option>
+                
+                <option value="100">Cuarto de prueba ($100)</option>
+                
+                <option value="1900">Habitacion doble ($1900)</option>
+                <option value="1500">Habitacion jr ($1500)</option>
+                <option value="2700">Suite grande ($2700)</option>
+            </select>
+
+            <label for="cantidad">Cantidad</label>
+            <input id="cantidad" type="number" min="1" max="20" step="1">
+
+            <button id="boton-promocion" type="button">Ver promoción</button>
+            <button id="calcular" type="button">Calcular</button>
+            <button id="limpiar" type="button">Limpiar</button>
+
+            <p id="mensaje-promocion" aria-live="polite"></p>
+            <p id="resultado" aria-live="polite"></p>
+        </section>
+
+        
+        <section class="catalogo">
+            <h2>Catálogo</h2>
+            <section class="catalogo">
+
+    <div class="producto">
+        
+<h3>Cuarto de prueba</h3>
+        <p>$100 MXN</p>
+        <label for="cantidad-1">Cantidad:</label>
+        <input type="number" id="cantidad-1" min="0" step="1" value="0">
+        <p>Subtotal: $<span id="subtotal-1">0.00</span></p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/habitacion doble.jpg"
+        <h3>Habitación doble</h3>
+        <p>$1900 MXN</p>
+        <label for="cantidad-2">Cantidad:</label>
+        <input type="number" id="cantidad-2" min="0" step="1" value="0">
+        <p>Subtotal: $<span id="subtotal-2">0.00</span></p>
+    </div>
+
+    <div class="producto">
+        <img src=
+        <h3>Habitación jr</h3>
+        <p>$1500 MXN</p>
+        <label for="cantidad-3">Cantidad:</label>
+        <input type="number" id="cantidad-3" min="0" step="1" value="0">
+        <p>Subtotal: $<span id="subtotal-3">0.00</span></p>
+    </div>
+
+    <div class="producto">
+        <h3>Suite grande</h3>
+        <p>$2700 MXN</p>
+        <label for="cantidad-4">Cantidad:</label>
+        <input type="number" id="cantidad-4" min="0" step="1" value="0">
+        <p>Subtotal: $<span id="subtotal-4">0.00</span></p>
+    </div>
+</section>
+<section class="resumen-compra">
+    <h2>Resumen de mi compra</h2>
+    <button type="button" id="calcular-compra">Calcular compra</button>
+    <p>Importe: $<span id="importe-compra">0.00</span></p>
+    <p>Descuento: $<span id="descuento-compra">0.00</span></p>
+    <p>Total a pagar: $<span id="total-compra">0.00</span></p>
+
+</section>
+
+    </div>
+</section>
+
+            
+        </section>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
